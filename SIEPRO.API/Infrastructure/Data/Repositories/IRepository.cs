@@ -6,6 +6,6 @@
         T Get(string id);
         T Add(T entity);
         T Update(string id, T entity);
-        void Remove(string id);
+        bool Remove(string id);
     }
 }

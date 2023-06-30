@@ -5,48 +5,48 @@ namespace SIEPRO.API.UI.Controllers.Interfaces
 {
     [Route("api/[controller]")]
     [ApiController]
-    public abstract class BasicController<T> : ControllerBase where T : class
+    public abstract class BasicCrudController<T> : ControllerBase where T : class
     {
         public IRepository<T> _repository;
 
-        public BasicController(IRepository<T> repository)
+        public BasicCrudController(IRepository<T> repository)
         {
             _repository = repository;
         }
 
         // GET: api/<PessoaController>
         [HttpGet]
-        public IEnumerable<T> Get()
+        public async Task<ActionResult<IEnumerable<T>>> Get()
         {
-            return _repository.GetAll();
+            return Ok( _repository.GetAll() );
         }
 
         // GET api/<PessoaController>/5
         [HttpGet("{id}")]
-        public T Get(string id)
+        public async Task<ActionResult<T>> Get(string id)
         {
-            return _repository.Get(id);
+            return Ok(_repository.Get(id));
         }
 
         // POST api/<PessoaController>
         [HttpPost]
-        public void Post([FromBody] T value)
+        public async Task<ActionResult<T>> Post([FromBody] T value)
         {
-            _repository.Add(value);
+            return _repository.Add(value);
         }
 
         // PUT api/<PessoaController>/5
         [HttpPut("{id}")]
-        public void Put(string id, [FromBody] T value)
+        public async Task<ActionResult<T>> Put(string id, [FromBody] T value)
         {
-            _repository.Update(id, value);
+            return Ok( _repository.Update(id, value) );
         }
 
         // DELETE api/<PessoaController>/5
         [HttpDelete("{id}")]
-        public void Delete(string id)
+        public async Task<ActionResult<bool>> Delete(string id)
         {
-            _repository.Remove(id);
+            return Ok(_repository.Remove(id));
         }
     }
 }
