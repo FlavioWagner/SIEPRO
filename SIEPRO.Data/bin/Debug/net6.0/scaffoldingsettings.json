@@ -1,0 +1,23 @@
+{
+  "DataSource": "Host=localhost;Database=siepro;Username=postgres;Password=postgres",
+  "Provider": "Npgsql.EntityFrameworkCore.PostgreSQL",
+  "ContextName": "SIEPROContext",
+  "ContextDirectory": ".\\src\\Infrastructure\\Data\\Contexts",
+  "OutputDirectory": ".\\src\\Domain\\Entities",
+  "ContextNamespace": null,
+  "Namespace": null,
+  "Schemas": null,
+  "Tables": null,
+  "ProjectDirectory": ".",
+  "StartupProjectDirectory": ".",
+  "TargetFramework": null,
+  "Configuration": null,
+  "TargetRuntime": null,
+  "DataAnnotations": false,
+  "UseDatabaseNames": false,
+  "NoOnConfiguring": true,
+  "NoPluralize": true,
+  "Force": true,
+  "NoBuild": false,
+  "Verbose": false
+}

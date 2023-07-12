@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\dotnet\\Projeto\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj": {}
+    "C:\\Workspace\\dotnet\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\dotnet\\Projeto\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj": {
+    "C:\\Workspace\\dotnet\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\dotnet\\Projeto\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj",
+        "projectUniqueName": "C:\\Workspace\\dotnet\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj",
         "projectName": "SIEPRO.API",
-        "projectPath": "C:\\Workspace\\dotnet\\Projeto\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj",
+        "projectPath": "C:\\Workspace\\dotnet\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj",
         "packagesPath": "C:\\Users\\flavi\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\dotnet\\Projeto\\SIEPRO\\SIEPRO.API\\obj\\",
+        "outputPath": "C:\\Workspace\\dotnet\\SIEPRO\\SIEPRO.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

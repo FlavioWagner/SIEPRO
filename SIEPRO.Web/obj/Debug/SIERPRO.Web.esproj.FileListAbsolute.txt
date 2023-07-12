@@ -1,0 +1,2 @@
+C:\Workspace\dotnet\SIEPRO\SIERPRO.Web\obj\Debug\SIERPRO.Web.esproj.SuggestedBindingRedirects.cache
+C:\Workspace\dotnet\SIEPRO\SIERPRO.Web\obj\Debug\SIERPRO.Web.esproj.CoreCompileInputs.cache

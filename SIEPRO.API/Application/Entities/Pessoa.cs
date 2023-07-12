@@ -7,7 +7,7 @@
         public string Registro { get; set; }
         public DateTime Cadastro { get; private set; }
 
-        public Pessoa(string nome, String registro)
+        public Pessoa(string nome, string registro)
         {
             Id = Guid.NewGuid().ToString();
             Nome = nome;

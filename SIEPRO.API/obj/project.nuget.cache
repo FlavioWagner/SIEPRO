@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wf34tGi4XkKjWIQYvASqB8jBBb3PhWSKm3HhJgjyK8M4D0yNTpGtJWHi0uaZWi45lEy0IJJVbdIi3Roepat9XA==",
+  "dgSpecHash": "pc8Rid53re97cA0KiRVHhI401f9PrAgsC+R3NqXRR7/4T7u8Jzanrk2cEFaBi4AkdW+inJa3rsJ8UwZGYNWINw==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\dotnet\\Projeto\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj",
+  "projectFilePath": "C:\\Workspace\\dotnet\\SIEPRO\\SIEPRO.API\\SIEPRO.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\flavi\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\flavi\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

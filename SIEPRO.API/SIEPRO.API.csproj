@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Application\DTOs\" />
     <Folder Include="Application\Events\" />
     <Folder Include="Application\Services\" />
   </ItemGroup>
