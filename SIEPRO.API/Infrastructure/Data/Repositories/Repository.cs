@@ -43,10 +43,11 @@ namespace SIEPRO.API.Infrastructure.Data.Repositories
             return _collection.Find(t => true).ToList();
         }
 
-        public void Remove(string id)
+        public bool Remove(string id)
         {
             var item = Get(id);
             _collection.DeleteOne(t => t.Equals(item));
+            return true;
         }
 
         public T Update(string id, T entity)

@@ -1,17 +1,15 @@
 ﻿namespace SIEPRO.API.Application.Entities
 {
-    public class Cidade
+    public class Usuario
     {
-        public string Id { get; private set; }
-        public string Nome { get; set; }
-        public string Uf { get; set; }
+        public String Id { get; private set; }
+        public string Nome { get; private set; }
         public DateTime Cadastro { get; private set; }
 
-        public Cidade(string nome, string uf)
+        public Usuario(String nome) 
         {
             Id = Guid.NewGuid().ToString();
             Nome = nome;
-            Uf = uf;
             Cadastro = DateTime.Now;
         }
     }

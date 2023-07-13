@@ -6,7 +6,7 @@ using SIEPRO.API.UI.Controllers.Interfaces;
 namespace SIEPRO.API.UI.Controllers
 {
     [ApiController]
-    public class MedicoController : BasicController<Medico>
+    public class MedicoController : BasicCrudController<Medico>
     {
         public MedicoController(IRepository<Medico> repository) : base(repository)
         {
