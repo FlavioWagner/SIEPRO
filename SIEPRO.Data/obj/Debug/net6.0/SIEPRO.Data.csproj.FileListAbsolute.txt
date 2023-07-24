@@ -252,3 +252,4 @@ C:\Workspace\dotnet\SIEPRO\SIEPRO.Data\obj\Debug\net6.0\refint\SIEPRO.Data.dll
 C:\Workspace\dotnet\SIEPRO\SIEPRO.Data\obj\Debug\net6.0\SIEPRO.Data.pdb
 C:\Workspace\dotnet\SIEPRO\SIEPRO.Data\obj\Debug\net6.0\SIEPRO.Data.genruntimeconfig.cache
 C:\Workspace\dotnet\SIEPRO\SIEPRO.Data\obj\Debug\net6.0\ref\SIEPRO.Data.dll
+C:\Workspace\dotnet\SIEPRO\SIEPRO.Data\bin\Debug\net6.0\libman.json

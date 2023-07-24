@@ -1,4 +1,4 @@
-﻿namespace SIEPRO.Data.src.Domain.Entities
+﻿namespace SIEPRO.Data.src.Application.Entities
 {
     public partial class Pessoa
     {

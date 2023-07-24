@@ -9,6 +9,7 @@ import { CarroService } from './Services/carro.service';
 import { MedicoService } from './Services/medico.service';
 import { CidadeServicece } from './Services/cidade.service';
 import { ProfessorService } from './Services/professor.service';
+import { HotelService } from './Services/hotel.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProfessorService } from './Services/professor.service';
     CarroService,
     MedicoService,
     CidadeServicece,
-    ProfessorService
+    ProfessorService,
+    HotelService
   ],  
   bootstrap: [AppComponent]
 })

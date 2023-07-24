@@ -4,87 +4,16 @@
     <tr>
       <th>Id</th>
       <th>Nome</th>
-      <th>Materia</th>
+      <th>Localização</th>
       <th>Cadastro</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let professor of professores">
-      <td>{{ professor.id }}</td>
-      <td>{{ professor.nome }}</td>
-      <td>{{ professor.materia }}</td>
-      <td>{{ professor.cadastro }}</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-
-
-
-<p>Pessoas</p>
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Nome</th>
-      <th>Registro</th>
-      <th>Cadastro</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let pessoa of pessoas">
-      <td>{{ pessoa.id }}</td>
-      <td>{{ pessoa.nome }}</td>
-      <td>{{ pessoa.registro }}</td>
-      <td>{{ pessoa.cadastro }}</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-<p>Cidades</p>
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Nome</th>
-      <th>UF</th>
-      <th>Cadastro</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let cidade of cidades">
-      <td>{{ cidade.id }}</td>
-      <td>{{ cidade.nome }}</td>
-      <td>{{ cidade.uf }}</td>
-      <td>{{ cidade.cadastro }}</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-<p>Medicos</p>
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Nome</th>
-      <th>CRM</th>
-      <th>Cadastro</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let medico of medicos">
-      <td>{{ medico.id }}</td>
-      <td>{{ medico.nome }}</td>
-      <td>{{ medico.crm }}</td>
-      <td>{{ medico.cadastro }}</td>
+    <tr *ngFor="let hotel of hoteis">
+      <td>{{ hotel.id }}</td>
+      <td>{{ hotel.nome }}</td>
+      <td>{{ hotel.localizacao }}</td>
+      <td>{{ hotel.cadastro }}</td>
     </tr>
   </tbody>
 </table>

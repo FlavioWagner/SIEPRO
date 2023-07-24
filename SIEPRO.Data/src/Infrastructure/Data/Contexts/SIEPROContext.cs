@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SIEPRO.Data.src.Domain.Entities;
+using SIEPRO.Data.src.Application.Entities;
 
 namespace SIEPRO.Data.src.Infrastructure.Data.Contexts
 {

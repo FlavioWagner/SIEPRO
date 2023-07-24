@@ -27,8 +27,7 @@
 
   <ItemGroup>
     <Folder Include="src\Application\DTOs\" />
-    <Folder Include="src\Domain\Entities\" />
-    <Folder Include="src\Domain\Services\" />
+    <Folder Include="src\Application\Services\" />
     <Folder Include="src\Infrastructure\Data\Migrations\" />
     <Folder Include="src\Infrastructure\ExternalServices\" />
     <Folder Include="src\Infrastructure\Messaging\RabbitMQ\Consumers\" />

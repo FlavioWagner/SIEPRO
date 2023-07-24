@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SIEPRO.Data.src.Domain.Entities
+namespace SIEPRO.Data.src.Application.Entities
 {
-    public partial class Ramo
+    public partial class PessoaJuridica
     {
-        public Ramo()
+        public PessoaJuridica()
         {
             RamoJuridica = new HashSet<RamoJuridica>();
         }
 
         public long Id { get; set; }
-        public string Nome { get; set; } = null!;
+        public string? NomeFantasia { get; set; }
 
+        public virtual Pessoa IdNavigation { get; set; } = null!;
         public virtual ICollection<RamoJuridica> RamoJuridica { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SIEPRO.Data.src.Domain.Entities
+namespace SIEPRO.Data.src.Application.Entities
 {
     public partial class PessoaFisica
     {

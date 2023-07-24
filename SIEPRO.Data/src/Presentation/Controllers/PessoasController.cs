@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SIEPRO.Data.src.Domain.Entities;
+using SIEPRO.Data.src.Application.Entities;
 using SIEPRO.Data.src.Infrastructure.Data.Contexts;
 
 namespace SIEPRO.Data.src.Presentation.Controllers

@@ -7,6 +7,8 @@ import { MedicoService } from 'src/app/Services/medico.service';
 import { PessoaService } from 'src/app/Services/pessoa.service';
 import { CidadeServicece } from 'src/app/Services/cidade.service';
 import { Professor } from 'src/app/Models/professor';
+import { Hotel } from 'src/app/Models/hotel';
+import { HotelService } from 'src/app/Services/hotel.service';
 
 @Component({
   selector: 'app-cadastro-pessoa',
@@ -19,11 +21,13 @@ export class CadastroPessoaComponent implements OnInit {
   medicos:Medico[] = [];
   cidades:Cidade[] = [];
   professores:Professor[] = [];
+  hoteis:Hotel[] = []; 
 
   constructor(private pessoaService:PessoaService,
               private medicoService:MedicoService,
               private cidadeService:CidadeServicece,
-              private professorService :ProfessorService) { }
+              private professorService :ProfessorService,
+              private hotelService :HotelService) { }
 
   async ngOnInit() {
     await this.carregarDados();
@@ -34,5 +38,6 @@ export class CadastroPessoaComponent implements OnInit {
     this.medicos = (await this.medicoService.GetAll());
     this.cidades = (await this.cidadeService.GetAll());
     this.professores = (await this.professorService.GetAll());
+    this.hoteis = (await this.hotelService.GetAll());
   }
 }

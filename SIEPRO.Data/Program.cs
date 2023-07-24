@@ -6,23 +6,6 @@ namespace SIEPRO.Data
 {
     public class Program
     {
-        public static IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args)
-        .ConfigureAppConfiguration((hostContext, config) =>
-        {
-            config.SetBasePath(Directory.GetCurrentDirectory());
-            config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-        })
-        .ConfigureServices((hostContext, services) =>
-        {
-            services.AddDbContext<SIEPROContext>((serviceProvider, options) =>
-            {
-                var configuration = serviceProvider.GetRequiredService<IConfiguration>();
-                var connectionString = configuration.GetConnectionString("SIEPRO");
-                options.UseNpgsql(connectionString);
-            });
-        });
-
-
 
         public static void Main(string[] args)
         {
