@@ -1,19 +1,39 @@
-<p>Medicos</p>
 <table>
   <thead>
     <tr>
       <th>Id</th>
       <th>Nome</th>
-      <th>Localização</th>
+      <th>Registro</th>
       <th>Cadastro</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let hotel of hoteis">
-      <td>{{ hotel.id }}</td>
-      <td>{{ hotel.nome }}</td>
-      <td>{{ hotel.localizacao }}</td>
-      <td>{{ hotel.cadastro }}</td>
+    <tr *ngFor="let item of pessoas">
+      <td>{{ item.id }}</td>
+      <td>{{ item.nome }}</td>
+      <td>{{ item.registro }}</td>
+      <td>{{ item.cadastro }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Marca</th>
+      <th>Cadastro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of carros">
+      <td>{{ item.id }}</td>
+      <td>{{ item.nome }}</td>
+      <td>{{ item.marca }}</td>
+      <td>{{ item.cadastro }}</td>
     </tr>
   </tbody>
 </table>

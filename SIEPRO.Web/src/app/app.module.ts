@@ -6,10 +6,6 @@ import { CadastroPessoaComponent } from './Components/cadastro-pessoa/cadastro-p
 import { PessoaService } from './Services/pessoa.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CarroService } from './Services/carro.service';
-import { MedicoService } from './Services/medico.service';
-import { CidadeServicece } from './Services/cidade.service';
-import { ProfessorService } from './Services/professor.service';
-import { HotelService } from './Services/hotel.service';
 
 @NgModule({
   declarations: [
@@ -23,11 +19,7 @@ import { HotelService } from './Services/hotel.service';
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
     PessoaService,
-    CarroService,
-    MedicoService,
-    CidadeServicece,
-    ProfessorService,
-    HotelService
+    CarroService
   ],  
   bootstrap: [AppComponent]
 })

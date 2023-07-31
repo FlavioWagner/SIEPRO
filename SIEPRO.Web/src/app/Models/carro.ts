@@ -1,7 +1,6 @@
 export class Carro {
     id?: string
     nome?: string
-    modelo?: string
+    marca?: string
     cadastro?: string
 }
-

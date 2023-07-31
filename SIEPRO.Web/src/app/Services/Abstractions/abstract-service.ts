@@ -12,6 +12,7 @@ export abstract class AbstractService<T> {
   async GetAll() {
     try {
       let resultado = await this.http.get<T[]>(environment.urlSistema + this.urlService()).toPromise();
+      console.log(environment.urlSistema + this.urlService())
       return resultado;
     } catch (error) {
       return null;
@@ -20,7 +21,7 @@ export abstract class AbstractService<T> {
 
   async GetById(id:any) {
     try {
-      let resultado = await this.http.get<T[]>(environment.urlSistema + this.urlService() + "/" + id).toPromise();
+      let resultado = await this.http.get<T>(environment.urlSistema + this.urlService() + "/" + id).toPromise();
       return resultado;
     } catch (error) {
       return null;

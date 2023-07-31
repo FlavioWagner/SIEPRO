@@ -1,33 +1,22 @@
-import { ProfessorService } from './../../Services/professor.service';
-import { Cidade } from 'src/app/Models/cidade';
+import { CarroService } from './../../Services/carro.service';
 import { Pessoa } from './../../Models/pessoa';
 import { Component, OnInit } from '@angular/core';
-import { Medico } from 'src/app/Models/medico';
-import { MedicoService } from 'src/app/Services/medico.service';
+import { Carro } from 'src/app/Models/carro';
 import { PessoaService } from 'src/app/Services/pessoa.service';
-import { CidadeServicece } from 'src/app/Services/cidade.service';
-import { Professor } from 'src/app/Models/professor';
-import { Hotel } from 'src/app/Models/hotel';
-import { HotelService } from 'src/app/Services/hotel.service';
 
 @Component({
   selector: 'app-cadastro-pessoa',
   templateUrl: './cadastro-pessoa.component.html',
-  styleUrls: ['./cadastro-pessoa.component.css']
+  styleUrls: ['./cadastro-pessoa.component.css'],
 })
 export class CadastroPessoaComponent implements OnInit {
 
   pessoas:Pessoa[] = [];
-  medicos:Medico[] = [];
-  cidades:Cidade[] = [];
-  professores:Professor[] = [];
-  hoteis:Hotel[] = []; 
+  carros:Carro[] = [];
 
   constructor(private pessoaService:PessoaService,
-              private medicoService:MedicoService,
-              private cidadeService:CidadeServicece,
-              private professorService :ProfessorService,
-              private hotelService :HotelService) { }
+              private carroService:CarroService,
+              ) { }
 
   async ngOnInit() {
     await this.carregarDados();
@@ -35,9 +24,8 @@ export class CadastroPessoaComponent implements OnInit {
   
   private async carregarDados() {
     this.pessoas = (await this.pessoaService.GetAll());
-    this.medicos = (await this.medicoService.GetAll());
-    this.cidades = (await this.cidadeService.GetAll());
-    this.professores = (await this.professorService.GetAll());
-    this.hoteis = (await this.hotelService.GetAll());
+     await this.carroService.GetById('f336c0b3-7531-4e97-84b9-28846669718a').then(x=>{
+      this.carros.push(x)
+    });
   }
 }

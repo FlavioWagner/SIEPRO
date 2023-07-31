@@ -4,9 +4,9 @@ using SIEPRO.API.UI.Controllers.Interfaces;
 
 namespace SIEPRO.API.UI.Controllers
 {
-    public class PessoasController : BasicCrudController<Pessoa>
+    public class CarrosController : BasicCrudController<Carro>
     {
-        public PessoasController(IRepository<Pessoa> repository) : base(repository)
+        public CarrosController(IRepository<Carro> repository) : base(repository)
         {
         }
     }
